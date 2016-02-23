@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,4 +12,117 @@
     tools:context="com.uom.formativemobileassessment.project.question"
     tools:showIn="@layout/activity_question">
 
-</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="50sp"
+            android:text="Questions"
+            android:id="@+id/txtQuestions"
+            android:layout_below="@+id/view3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="MCQ"
+            android:id="@+id/txtMcq"
+            android:layout_below="@+id/txtQuestions"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imgMcq"
+            android:background="@drawable/mcq"
+            android:layout_below="@+id/txtMcq"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:onClick="mcq"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="True/False"
+            android:id="@+id/txtTF"
+            android:layout_below="@+id/imgMcq"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imgTF"
+            android:background="@drawable/truefalse"
+            android:layout_below="@+id/txtTF"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:onClick="tf"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Essay Type"
+            android:id="@+id/txtEssayType"
+            android:layout_below="@+id/imgTF"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imgEssayType"
+            android:background="@drawable/essaytype"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txtEssayType"
+            android:layout_marginTop="10dp"
+            android:onClick="essayType"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Poll Scale"
+            android:id="@+id/txtPollScale"
+            android:layout_below="@+id/imgEssayType"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imgPollScale"
+            android:background="@drawable/pollscale"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txtPollScale"
+            android:layout_marginTop="10dp"
+            android:onClick="pollScale"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Matrix Comparison"
+            android:id="@+id/txtMatrixComparison"
+            android:layout_below="@+id/imgPollScale"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"/>
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/imgMatrixComparison"
+            android:background="@drawable/comparison"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txtMatrixComparison"
+            android:layout_marginTop="10dp"
+            android:onClick="matrixComparison"/>
+    </RelativeLayout>
+
+</ScrollView>
